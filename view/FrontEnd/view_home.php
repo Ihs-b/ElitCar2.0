@@ -7,4 +7,4 @@ ob_start();
 <p><input type="button" value="Créer mon compte" onclick="document.location.href = 'index.php?action=auth';" /></p>
 <?php
 $content = ob_get_clean();
-c?>
+?>
