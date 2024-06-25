@@ -163,6 +163,20 @@
             <!-- Add your payment methods content here -->
         </section>
     </div>
+    <div id="messages" class="tab-content" style="display: none;">
+        <div class="no-rentals">
+            <img src="http://localhost/ElitCar2.0/public/img/logo_voiture_empty.png" alt="Car Icon">
+            <p>Aucun message  !</p>
+            <button>Trouver un véhicule</button>
+        </div>
+    </div>
+    <div id="notifications" class="tab-content" style="display: none;">
+        <div class="no-rentals">
+            <img src="http://localhost/ElitCar2.0/public/img/logo_voiture_empty.png" alt="Car Icon">
+            <p>Aucune notifcations !</p>
+            <button>Trouver un véhicule</button>
+        </div>
+    </div>
 </main>
 <footer>
     <div class="footer-columns">
