@@ -86,42 +86,7 @@
                 </div>
             </form>
         </section>
-        <section id="settings" class="account-section" style="display: none;">
-            <h2>Paramètres du compte</h2>
-            <form>
-                <div class="form-group">
-                    <h3>Modifier mon mail</h3>
-                    <label for="new-email">Nouveau email</label>
-                    <input type="email" id="new-email">
-                    <label for="current-password">Votre mot de passe Elitcar</label>
-                    <input type="password" id="current-password">
-                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
-                    <button type="button" class="btn">Changer mon email</button>
-                </div>
-                <div class="form-group">
-                    <h3>Modifier mon mot de passe</h3>
-                    <label for="old-password">Ancien mot de passe</label>
-                    <input type="password" id="old-password">
-                    <a href="#" class="forgot-password">Mot de passe oublié ?</a>
-                    <label for="new-password">Nouveau mot de passe</label>
-                    <input type="password" id="new-password">
-                    <label for="confirm-password">Confirmation</label>
-                    <input type="password" id="confirm-password">
-                    <button type="button" class="btn">Changer mon mot de passe</button>
-                </div>
-                <div class="form-group">
-                    <h3>Supprimer mon compte</h3>
-                    <a href="#" class="delete-account">Supprimer mon compte</a>
-                </div>
-            </form>
-        </section>
-        <section id="payment" class="account-section" style="display: none;">
-            <div class="no-rentals">
-                <img src="http://localhost/ElitCar2.0/public/img/payment-icon.jpg" alt="Payment Icon">
-                <p>Vous n'avez enregistré aucun moyen de paiement.<br>L'ajout d'un nouveau moyen de paiement est uniquement disponible au moment de la réservation.</p>
-                <button>Trouver un véhicule</button>
-            </div>
-        </section>
+
     </div>
     <div id="messages" class="tab-content" style="display: none;">
         <div class="no-rentals">
