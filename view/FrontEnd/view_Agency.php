@@ -100,6 +100,7 @@ ob_start();
 <?php
 $content =ob_get_clean();
 require('view_Template.php');
+require('view_FAQ.php');
 ?>
 <style>
     
@@ -109,6 +110,7 @@ body {
             
     font-size: 16px; /* Taille de base pour le corps du document */
 }
+
 
 .container-professional {
     height: 75vh;
@@ -136,7 +138,7 @@ body {
 }
 
 .container-pro-title h1 {
-    font-size: 2rem;
+     font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -182,15 +184,16 @@ body {
   
 }
 
-
-p {
-    font-size: 25px; /* Change la taille de la police pour les paragraphes */
-}
 h5{
     font-size:20px;
 }
+.container-main-choose-sub-title h2{
+    font-size:2rem;
+}
+.container-main-choose-sub-card-title P{
+    font-size:25px;
 
-
+}
 
 .container-main-choose-sub-card  {
   display: flex;
@@ -242,14 +245,13 @@ h5{
 }
 .btn-warning-pro-2 {
   /* Style du bouton de recherche */
-  height: 40px;
-  width: 100%;
   background-color: #ffaa00;
-  border: none;
-  color: #ffffff;
-  padding: 10px 30px;
-  
-  border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
   
 }
 /* l'effet de survol pour le bouton */
