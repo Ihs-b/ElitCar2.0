@@ -1,4 +1,7 @@
-pour rappel :
+pour rappel vous pouvez modifier le readme pour mettre les views que vous avez fini ou celle que vous allez faire, aller sur la maquette figma et choisissez une view qui n'est pas déjà prise sinon arranger vous entre vous bon taff l'équipe !
+
+Avancement des views:
+
 loic : 
 desktop 4-5-6-7
 
