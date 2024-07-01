@@ -4,28 +4,29 @@ function elitLandHome()
 {
     require('././view/FrontEnd/view_home.php');//kaouther
 }
-function elitAuth()
-{
-    require('././view/FrontEnd/view_auth.php');
-}
+// function elitAuth()
+// {
+//     require('././view/FrontEnd/view_auth.php');
+// }
 function elitAuthCust(){
     require('././view/FrontEnd/view_auth_cust.php');
 }
-function elitAuthAgency(){
-    require('././view/FrontEnd/view_auth_agency');
-}
-function elitLogIn(){
-    require('././view/FrontEnd/view_login.php');// loic desktop 
-}
 function elitLogCust(){
-    require('././view/FrontEnd/view_log_cust.php');// loic desktop 5
+    require('././view/FrontEnd/view_log_cust.php');
 }
-function elitLogAgency(){
-    require('././view/FrontEnd/view_log_agency.php');// loic desktop 
-}
-function elitRegister(){
-    require('././view/FrontEnd/view_register.php');
-}
+// function elitAuthAgency(){
+//     require('././view/FrontEnd/view_auth_agency');
+// }
+// function elitLogIn(){
+//     require('././view/FrontEnd/view_login.php');
+// }
+
+// function elitLogAgency(){
+//     require('././view/FrontEnd/view_log_agency.php');
+// }
+// function elitRegister(){
+//     require('././view/FrontEnd/view_register.php');
+// }
 
 
 // function elitComments()

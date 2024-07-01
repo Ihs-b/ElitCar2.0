@@ -2,25 +2,11 @@
 require('controller/FrontEnd/controllerFrontend.php');
 
 if (isset($_GET['action'])) {
-    if ($_GET['action'] === 'auth') {
-        elitAuth();
-    }elseif($_GET['action'] === 'register'){
-        elitRegister();
-    }
-    
-    
-    
-    
-    
-    
-    
-    elseif ($_GET['action'] === 'LogIn') { // urls wich shows users wants to login
-        elitLogIn();
-    }elseif ($_GET['action']==='LogCust') {
+    if($_GET['action'] === 'logCust'){// "se connecter"
         elitLogCust();
-    }elseif ($_GET['action']==='LogAgency'){
-        elitLogAgency();
+    }elseif ($_GET['action'] === 'authCust') {//"s'inscrire"
+        elitAuthCust();
     }
-} else {
+}else {
     elitLandHome();
 }
