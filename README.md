@@ -1,15 +1,13 @@
-pour rappel vous pouvez modifier le readme pour mettre les views que vous avez fini ou celle que vous allez faire, aller sur la maquette figma et choisissez une view qui n'est pas déjà prise sinon arranger vous entre vous bon taff l'équipe !
-
-Avancement des views:
-
-loic : 
+pour rappel :
+loic :
 desktop 4-5-6-7
 
 claude:
-desktop 17-24-26
+desktop 17
 
 kaouther:
-desktop 1-9
+desktop 1
+
 Michel:
 desktop 8
 
@@ -21,3 +19,19 @@ desktop 11-12-13-14-15-16
 
 mhms:
 desktop 2
+il y'a une view manqaunte sur la maquette la view_Auth_Agency le formulaire d'inscription et connexion des agences
+
+01/07/2024 - Avancement
+
+integration de la homepage sur mvc ElitCar
+règlement des problèmes sur la redirection des pages vers connexion à inscription identification de la séparation entre agence et custommer
+
+30/06/2024 - Avancement
+
+prep des fonctions pour les connexions/inscription custommer/agency mise en commentaire des views pour l'orga
+4=authtype
+5=authCust
+6=logCust
+7=logAgency
+à continuer
+voir dans le cahier pour la loique des pages
