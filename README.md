@@ -6,7 +6,7 @@ claude:
 desktop 17
 
 kaouther:
-desktop 1
+desktop 1-9
 
 Michel:
 desktop 8
