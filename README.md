@@ -3,7 +3,7 @@ loic :
 desktop 4-5-6-7
 
 claude:
-desktop 17 - 27 - 24
+desktop 17 - 27 - 24 -26
 
 kaouther:
 desktop 1-9
