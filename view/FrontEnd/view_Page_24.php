@@ -27,7 +27,7 @@ ob_start();
         </div>
         <div class="right-section">
             <!-- Section pour l'image -->
-             <img src="login-img.jpg">
+             <img src="public/img/homepage/2.jpg">
         </div>
     </div>
 </body>
@@ -79,7 +79,7 @@ require('view_Template.php');
         }
         .right-section {
             width: 50%;
-            background-image: url('login-img.jpg'); /* Remplacez par le chemin de votre image */
+            background-image: url('public/img/homepage/2.jpg'); /* Remplacez par le chemin de votre image */
             background-size: cover;
             background-position: center;
         }
