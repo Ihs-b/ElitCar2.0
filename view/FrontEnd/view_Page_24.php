@@ -1,3 +1,7 @@
+<?
+$title="Utilisateur";
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -23,11 +27,15 @@
         </div>
         <div class="right-section">
             <!-- Section pour l'image -->
-             <img src="public/img/homepage/2.jpg">
+             <img src="login-img.jpg">
         </div>
     </div>
 </body>
 </html>
+<?php
+$content =ob_get_clean();
+require('view_Template.php');
+?>
 <style>
         body {
             margin: 0;
@@ -71,7 +79,7 @@
         }
         .right-section {
             width: 50%;
-            background-image: url('public/img/homepage/2.jpg'); /* Remplacez par le chemin de votre image */
+            background-image: url('login-img.jpg'); /* Remplacez par le chemin de votre image */
             background-size: cover;
             background-position: center;
         }
@@ -107,3 +115,4 @@
             background-color: #e68900;
         }
     </style>
+
