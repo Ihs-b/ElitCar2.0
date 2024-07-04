@@ -1,3 +1,7 @@
+<?
+$title="Agence";
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -28,6 +32,10 @@
     </div>
 </body>
 </html>
+<?php
+$content =ob_get_clean();
+require('view_Template.php');
+?>
 <style>
         body {
             margin: 0;
@@ -107,3 +115,4 @@
             background-color: #e68900;
         }
     </style>
+
