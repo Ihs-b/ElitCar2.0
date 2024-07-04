@@ -21,7 +21,7 @@ ob_start();
                 <h1>Mot de passe oublié</h1>
                 <p>Si votre adresse e-mail est présente dans notre base de données, vous recevrez dans quelques minutes un courriel vous fournissant les instructions pour réinitialiser votre mot de passe.</p>
                 <p>Si vous ne localisez pas ce courriel, veuillez vérifier votre dossier indésirables ou vos spams.</p>
-                <a href="view_Forgot_Password_Agency.php"><strong> Renvoyer l'email</strong></a>
+                <a href="#"><strong> Renvoyer l'email</strong></a>
             </div>
         </div>
             <div class="right-section">
