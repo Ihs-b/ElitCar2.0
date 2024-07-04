@@ -21,7 +21,7 @@
             </div>
         </div>
             <div class="right-section">
-            <img src="login-img.jpg">
+            <img src="2.jpg">
                 <!-- Image content is handled by the background-image property in CSS -->
             </div>
             </div>
@@ -72,7 +72,7 @@
         }
         .right-section {
             width: 50%;
-            background-image: url('login-img.jpg'); /* Remplacez par le chemin de votre image */
+            background-image: url('2.jpg'); /* Remplacez par le chemin de votre image */
             background-size: cover;
             background-position: center;
         }
