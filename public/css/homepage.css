@@ -370,10 +370,11 @@
     width: calc(33.33% - 20px); /* 3 colonnes par ligne avec espacement entre les colonnes */
     margin-right: 20px; /* Espacement entre les colonnes */
     margin-bottom: 20px; /* Espacement entre les lignes */
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* background-color: #f0f0f0; */
+    /* border-radius: 8px; */
+    /* overflow: hidden; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid rgb(141, 141, 141);
   }
   
   .link {
