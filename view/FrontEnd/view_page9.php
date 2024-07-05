@@ -21,4 +21,5 @@
     </div>
 
 </main>
+
 <?php include_once ("view/FrontEnd/view_footer.php") ?>
