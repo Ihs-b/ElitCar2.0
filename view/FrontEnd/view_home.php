@@ -280,5 +280,5 @@
     </div>
 </main>
 <?php include_once ("view/FrontEnd/view_footer.php") ?>
-<script src="public/js/homepage.js">
+<script src="public/js/homepage.js"></script>
 
