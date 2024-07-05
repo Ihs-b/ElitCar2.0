@@ -42,6 +42,8 @@ window.addEventListener('mouseup', (event) => {
     })
   }
 })
+
+
 function handleSmallScreens() {
   document.querySelector('.navbar-toggler')
     .addEventListener('click', () => {
@@ -57,11 +59,8 @@ function handleSmallScreens() {
 
 handleSmallScreens()
 
-
-var links = document.querySelectorAll('#accordion .link');
-
-// Ajout d'un gestionnaire d'événement pour chaque .link
-links.forEach(function(link) {
+// les box de information 
+document.querySelectorAll('#accordion .link').forEach(function(link) {
   link.addEventListener('click', function() {
     // Sélection du sous-menu correspondant
     var submenu = this.nextElementSibling;
@@ -74,6 +73,24 @@ links.forEach(function(link) {
     }
   });
 });
+
+
+// var links = document.querySelectorAll('#accordion .link');
+
+// // Ajout d'un gestionnaire d'événement pour chaque .link
+// links.forEach(function(link) {
+//   link.addEventListener('click', function() {
+//     // Sélection du sous-menu correspondant
+//     var submenu = this.nextElementSibling;
+
+//     // Vérification si le sous-menu est déjà affiché ou caché
+//     if (submenu.style.display === 'block') {
+//       submenu.style.display = 'none';
+//     } else {
+//       submenu.style.display = 'block';
+//     }
+//   });
+// });
 
 
 const inputs = document.querySelectorAll('.code-inputs input');

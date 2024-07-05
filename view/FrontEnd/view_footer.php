@@ -12,35 +12,37 @@
      <div class="cner">
       <div class="ro">
         <div class="footer-col">
-          <h4>company</h4>
+          <h4>Entreprise</h4>
           <ul>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
-            <li><a href="#">affiliate program</a></li>
+            <li><a href="#">A propos de nous</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">politique de confidentialité</a></li>
+            <li><a href="#">Conditions générales</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>get help</h4>
+          <h4>Aide</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">order status</a></li>
-            <li><a href="#">payment options</a></li>
+            <li><a href="#">Expédition</a></li>
+            <li><a href="#">Retour</a></li>
+            <!-- <li><a href="#">Statut de la commande</a></li> -->
+            <li><a href="#">Options de paiement</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>online shop</h4>
+          <h4>Nos horaires </h4>
           <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
+            <li><a href="#">du Lundi au Samedi : <br> 8h00 - 18h00</a></li>
+            <li><a href="#">Dimanche : <br> fermé</a></li>
+            <li><a href="#">(+237) 679 27 83 56 </a></li>
+            <li><a href="#">(+237) 233 47 10 26</a></li>
+            
+
           </ul>
         </div>
         <div class="footer-col">
-          <h4>follow us</h4>
+          <h4>Suivez nous</h4>
           <div class="social-links">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa  fa-twitter"></i></a>

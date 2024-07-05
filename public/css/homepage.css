@@ -352,6 +352,9 @@
       text-align: center; /* Centre le texte */
       box-sizing: border-box; /* Pour inclure le padding dans la largeur */
   }
+  #card-te{
+    text-align: start;
+  }
   
   .caramel{
       margin-left: 156px;
@@ -359,47 +362,43 @@
   }
   #accordion {
     list-style: none;
-    /* padding: 35px; */
+    padding: 35px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-  }
-  
-  #accordion > li {
+}
+
+#accordion > li {
     width: calc(33.33% - 20px); /* 3 colonnes par ligne avec espacement entre les colonnes */
     margin-right: 20px; /* Espacement entre les colonnes */
     margin-bottom: 20px; /* Espacement entre les lignes */
-    /* background-color: #f0f0f0; */
-    /* border-radius: 8px; */
-    /* overflow: hidden; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     border-bottom: 1px solid rgb(141, 141, 141);
-  }
-  
-  .link {
+}
+
+.link {
     padding: 10px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .link i {
+}
+
+.link i {
     margin-right: 10px;
-  }
-  
-  .submenu {
+}
+
+.submenu {
     display: none;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .submenu li {
+}
+
+.submenu li {
     padding: 10px;
-  }
-  
+}
+
 
   .section {
     display: flex;
@@ -485,7 +484,8 @@
     position: absolute;
     left:0;
     bottom: -10px;
-    background-color: #e91e63;
+    background-color: rgb(44, 114, 255);
+    ;
     height: 2px;
     box-sizing: border-box;
     width: 50px;

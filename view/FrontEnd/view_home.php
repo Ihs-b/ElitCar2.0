@@ -72,7 +72,7 @@
             
         </div>
         <div class="cardd">
-            <img src="asset/img/4.jpg" alt="Image 2">
+            <img src="public/img/4.jpg" alt="Image 2">
             <div class="card-text">Monospace</div>
            
         </div>
@@ -101,7 +101,7 @@
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link"> Location de voitures à Yaoundé<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Javascript</a></li>
                 <li><a href="#">jQuery</a></li>
@@ -109,7 +109,7 @@
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link"> Location de voitures à Garoua<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Tablet</a></li>
                 <li><a href="#">Mobile</a></li>
@@ -117,7 +117,7 @@
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link">Location de voitures à Bafoussam<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Google</a></li>
                 <li><a href="#">Bing</a></li>
@@ -125,7 +125,7 @@
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link">Location de voitures à Sangmelima<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Google</a></li>
                 <li><a href="#">Bing</a></li>
@@ -133,7 +133,7 @@
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link">Location de voitures à Kribi<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Google</a></li>
                 <li><a href="#">Bing</a></li>
@@ -148,18 +148,18 @@
             <div class="cont">
                 <div class="cardd">
                     <img src="public/img/7.jpg" alt="Image 1">
-                    <div class="card-text"><span>Où se loger à Yaoundé ?</span> <br>Pour les vacances, le travail, et de nombreuses
+                    <div class="card-text" id="card-te"><h3><span>Où se loger à Yaoundé ?</span></h3> <br>Pour les vacances, le travail, et de nombreuses
                     autres circonstances.</div>
                     
                 </div>
                 <div class="cardd">
                     <img src="public/img/8.jpg" alt="Image 2">
-                    <div class="card-text"><span>Conseils pour un road trip réussi</span> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
+                    <div class="card-text" id="card-te"><h3><span>Conseils pour un road trip réussi</span></h3> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
                 
                 </div>
                 <div class="cardd">
                     <img src="public/img/9.jpg" alt="Image 3">
-                    <div class="card-text"><span>Conseils pour un road trip réussi</span> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
+                    <div class="card-text" id="card-te"><h3><span>Conseils pour un road trip réussi</span></h3> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
                 
                 </div>
                 
@@ -168,7 +168,7 @@
 
 
 
-        <h1 class="caramel">Disponible dans 6 villes au Cameroun</h1>
+        <h1 class="caramel">Vous êtes une agence de location de <br> voitures ?</h1>
 <!-- Contenedor -->
 <ul id="accordion" class="accordion">
             <li>
