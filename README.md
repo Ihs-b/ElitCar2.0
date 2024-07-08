@@ -15,7 +15,7 @@ selmane:
 desktop 20
 
 ihssane:
-desktop 11-12-13-14-15-16
+desktop 11-12-13-14-15-16, 30-31-32-33
 
 mhms:
 desktop 2
