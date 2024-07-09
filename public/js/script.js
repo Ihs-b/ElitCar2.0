@@ -33,3 +33,27 @@ function showAccountTab(tabId) {
     // Add 'active' class to the selected side button
     document.querySelector(`.side-button[onclick="showAccountTab('${tabId}')"]`).classList.add('active');
 }
+
+
+function showUserTab(tabName) {
+    let i;
+    let tabcontent = document.getElementsByClassName("user-tab-content");
+    let tablinks = document.getElementsByClassName("user-tab-button");
+
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('clients').style.display = 'none';
+    document.getElementById('tableau-utilisateur').style.display = 'block';
+});
+

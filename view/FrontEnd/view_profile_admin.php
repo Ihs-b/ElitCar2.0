@@ -1,22 +1,10 @@
-<?php
-//$title = "profileCust";
-//$link ='
-//    <link rel="stylesheet" href="././public/css/particulier_styles.css">
-//    ';
-//$script ='<script src="././public/js/script.js">
-//</script>';
-//ob_start();
-//?>
-
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Elitcar</title>
-        <link href="http://localhost/ElitCar2.0/public/css/particulier_styles.css" rel="stylesheet">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elitcar</title>
+    <link href="http://localhost/ElitCar2.0/public/css/particulier_styles.css" rel="stylesheet">
     <style>
         .annonce-card {
             display: flex;
@@ -88,23 +76,85 @@
         .annonce-card-actions .annonce-edit {
             color: #00cc00;
         }
+        .user-tab-container {
+            width: 100%;
+            /*max-width: 800px;*/
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .tabs {
+            display: flex;
+            border: 1px solid #ffb200;
+            border-radius: 30px;
+            overflow: hidden;
+            margin: 20px 0;
+            width: max-content;
+            align-self: center;
+        }
+
+        .user-tab-button {
+            flex: 1;
+            padding: 10px 20px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background-color: #fff;
+            color: #ffb200;
+            font-weight: bold;
+            font-size: large;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 30px;
+        }
+
+        .user-tab-button.active, .user-tab-button:hover {
+            background-color: #ffb200;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .user-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .user-table th, .user-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .user-table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+
+        .user-table a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .user-table a:hover {
+            text-decoration: underline;
+        }
+
     </style>
-    <!--    <header>-->
-    <!--        <div class="header-left">-->
-    <!--            <h1>Elitcar</h1>-->
-    <!--        </div>-->
-    <!--        <div class="header-right">-->
-    <!--            <div class="user-info">-->
-    <!--                <span>Charles</span>-->
-    <!--            </div>-->
-    <!--            <div class="questions">-->
-    <!--                <span>Des questions ?</span>-->
-    <!--            </div>-->
-    <!--            <div class="find-car">-->
-    <!--                <a href="#">Trouver ma voiture</a>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </header>-->
+</head>
+<body>
+
     <nav>
         <ul>
             <li><a href="#" class="active" onclick="showTab('annonce')">MES ANNONCES</a></li>
@@ -146,50 +196,59 @@
             </div>
         </div>
         <div id="tableau-utilisateur" class="tab-content" style="display: none;">
-
+            <div class="user-tab-container">
+                <div class="tabs">
+                    <button class="user-tab-button active" onclick="showUserTab('agences')">Les agences</button>
+                    <button class="user-tab-button" onclick="showUserTab('clients')">Les clients</button>
+                </div>
+                <div id="agences" class="user-tab-content active">
+                    <table class="user-table">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Email</th>
+                            <th>Statut</th>
+                            <th>Modifier</th>
+                            <th>Bloquer/Supprimer</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Daniel Z</td>
+                            <td>agence-elitcar@gmail.com</td>
+                            <td>Membre Premium+</td>
+                            <td><a href="#">Modifier</a></td>
+                            <td><a href="#">Bloquer/Supprimer</a></td>
+                        </tr>
+                        <!-- ... other rows ... -->
+                        </tbody>
+                    </table>
+                </div>
+                <div id="clients" class="user-tab-content">
+                    <table class="user-table">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Email</th>
+                            <th>Modifier</th>
+                            <th>Bloquer/Supprimer</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Daniel Z</td>
+                            <td>daniel-z@gmail.com</td>
+                            <td><a href="#">Modifier</a></td>
+                            <td><a href="#">Bloquer/Supprimer</a></td>
+                        </tr>
+                        <!-- ... other rows ... -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </main>
-    <!--<footer>-->
-    <!--    <div class="footer-columns">-->
-    <!--        <div class="footer-column">-->
-    <!--            <h3>Entreprise</h3>-->
-    <!--            <ul>-->
-    <!--                <li><a href="#">Comment ça marche ?</a></li>-->
-    <!--                <li><a href="#">À propos</a></li>-->
-    <!--                <li><a href="#">Appli mobile</a></li>-->
-    <!--                <li><a href="#">Blog</a></li>-->
-    <!--                <li><a href="#">Mentions légales</a></li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--        <div class="footer-column">-->
-    <!--            <h3>Entreprise</h3>-->
-    <!--            <ul>-->
-    <!--                <li><a href="#">Comment ça marche ?</a></li>-->
-    <!--                <li><a href="#">À propos</a></li>-->
-    <!--                <li><a href="#">Appli mobile</a></li>-->
-    <!--                <li><a href="#">Blog</a></li>-->
-    <!--                <li><a href="#">Mentions légales</a></li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--        <div class="footer-column">-->
-    <!--            <h3>Entreprise</h3>-->
-    <!--            <ul>-->
-    <!--                <li><a href="#">Comment ça marche ?</a></li>-->
-    <!--                <li><a href="#">À propos</a></li>-->
-    <!--                <li><a href="#">Appli mobile</a></li>-->
-    <!--                <li><a href="#">Blog</a></li>-->
-    <!--                <li><a href="#">Mentions légales</a></li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--    <div class="footer-bottom">-->
-    <!--        <p>Confidentialité | Conditions générales | ©2024 Elitcar</p>-->
-    <!--    </div>-->
-    <!--</footer>-->
+
     <script src="http://localhost/ElitCar2.0/public/js/script.js"></script>
-    </body>
-    </html>
-<?php
-//$content = ob_get_clean();
-//require('view_template.php');
-//?>
+</body>
+</html>
