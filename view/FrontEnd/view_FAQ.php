@@ -1,8 +1,6 @@
-<?
-$title="FAQ";
+<?php
 ob_start();
 ?>
-
     <div class="faq-container">
         <h1>Foire aux questions</h1>
         <div class="faq-columns">
@@ -104,108 +102,12 @@ ob_start();
                     <summary class="faq-question">  16. Est-il possible de louer une voiture avec un chauffeur avec ElitCar ? <span class="arrow"></span></summary>
                     <div class="faq-answer">
                         <p> - Oui, nous proposons des services de location de voiture avec chauffeur dans certaines régions. Veuillez nous contacter pour plus de détails.   </p>
-          
                     </div>
                 </details>
                 <!-- Add more FAQ items in this column as needed -->
             </div>
         </div>
     </div>
-
-
-      
-     
-      
-  
-   
-    
-    
-      
-
-     
-      
-     
-   
 <?php
-$content =ob_get_clean();
-require('view_Template.php');
-require('view_Footer.php');
+$faq =ob_get_clean();
 ?>
-<style>
-  
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: silver;
-    margin: 0;
-    padding: 0;
-}
-
-.faq-container {
-    max-width: 1500px;
-    margin: 50px auto;
-    padding: 120px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
-
-h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    height: 10vh;
-    
-}
-
-.faq-columns {
-    display: flex;
-    gap: 20px;
-}
-
-.faq-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.faq-item {
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.faq-question {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.faq-answer {
-    padding-top: 10px;
-    margin-left: 20px;
-}
-
-summary::marker {
-    font-size: 1.2rem;
-}
-
-.arrow {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 10px;
-    vertical-align: middle;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-    transition: transform 0.3s ease;
-}
-
-details[open] .arrow {
-    transform: rotate(180deg);
-}

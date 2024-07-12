@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <a href="index.php">HOME</a>
     <?= $content ?>
 </body>
 <?= $script ?>
