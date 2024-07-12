@@ -5,153 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elitcar</title>
     <link href="http://localhost/ElitCar2.0/public/css/particulier_styles.css" rel="stylesheet">
-    <style>
-        .annonce-card {
-            display: flex;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            width: 600px;
-            max-width: 100%;
-        }
-
-        .card-image {
-            width: 50%;
-            object-fit: cover;
-        }
-
-        .annonce-card-content {
-            padding: 20px;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .annonce-card-content h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .tag {
-            display: inline-block;
-            padding: 5px 10px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-            font-size: 0.8em;
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .rating, .location, .price, .duration {
-            margin: 5px 0;
-            font-size: 0.9em;
-            color: #555;
-        }
-
-        .price {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #000;
-        }
-
-        .annonce-card-actions {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .annonce-card-actions a {
-            text-decoration: none;
-            font-size: 0.9em;
-        }
-
-        .annonce-card-actions .annonce-delete {
-            color: #ff0000;
-        }
-
-        .annonce-card-actions .annonce-edit {
-            color: #00cc00;
-        }
-        .user-tab-container {
-            width: 100%;
-            /*max-width: 800px;*/
-            margin: 0 auto;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-        }
-        .tabs {
-            display: flex;
-            border: 1px solid #ffb200;
-            border-radius: 30px;
-            overflow: hidden;
-            margin: 20px 0;
-            width: max-content;
-            align-self: center;
-        }
-
-        .user-tab-button {
-            flex: 1;
-            padding: 10px 20px;
-            text-align: center;
-            cursor: pointer;
-            border: none;
-            background-color: #fff;
-            color: #ffb200;
-            font-weight: bold;
-            font-size: large;
-            transition: background-color 0.3s, color 0.3s;
-            border-radius: 30px;
-        }
-
-        .user-tab-button.active, .user-tab-button:hover {
-            background-color: #ffb200;
-            color: #fff;
-        }
-
-        .tab-content {
-            display: none;
-            padding: 20px;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
-
-        .user-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .user-table th, .user-table td {
-            padding: 10px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        .user-table th {
-            background-color: #f5f5f5;
-            font-weight: bold;
-        }
-
-        .user-table a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .user-table a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
+<!--    <style>-->
+<!--        .annonce-card {-->
+<!--            display: flex;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 10px;-->
+<!--            overflow: hidden;-->
+<!--            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);-->
+<!--            background-color: #fff;-->
+<!--            width: 600px;-->
+<!--            max-width: 100%;-->
+<!--        }-->
+<!---->
+<!--        .card-image {-->
+<!--            width: 50%;-->
+<!--            object-fit: cover;-->
+<!--        }-->
+<!---->
+<!--        .annonce-card-content {-->
+<!--            padding: 20px;-->
+<!--            width: 50%;-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--            justify-content: space-between;-->
+<!--        }-->
+<!---->
+<!--        .annonce-card-content h3 {-->
+<!--            margin: 0 0 10px 0;-->
+<!--            font-size: 1.5em;-->
+<!--            color: #333;-->
+<!--        }-->
+<!---->
+<!--        .tag {-->
+<!--            display: inline-block;-->
+<!--            padding: 5px 10px;-->
+<!--            background-color: #f5f5f5;-->
+<!--            border-radius: 5px;-->
+<!--            font-size: 0.8em;-->
+<!--            color: #777;-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+<!---->
+<!--        .rating, .location, .price, .duration {-->
+<!--            margin: 5px 0;-->
+<!--            font-size: 0.9em;-->
+<!--            color: #555;-->
+<!--        }-->
+<!---->
+<!--        .price {-->
+<!--            font-size: 1.2em;-->
+<!--            font-weight: bold;-->
+<!--            color: #000;-->
+<!--        }-->
+<!---->
+<!--        .annonce-card-actions {-->
+<!--            display: flex;-->
+<!--            justify-content: space-between;-->
+<!--            margin-top: 20px;-->
+<!--        }-->
+<!---->
+<!--        .annonce-card-actions a {-->
+<!--            text-decoration: none;-->
+<!--            font-size: 0.9em;-->
+<!--        }-->
+<!---->
+<!--        .annonce-card-actions .annonce-delete {-->
+<!--            color: #ff0000;-->
+<!--        }-->
+<!---->
+<!--        .annonce-card-actions .annonce-edit {-->
+<!--            color: #00cc00;-->
+<!--        }-->
+<!--        .user-tab-container {-->
+<!--            width: 100%;-->
+<!--            /*max-width: 800px;*/-->
+<!--            margin: 0 auto;-->
+<!--            background-color: #fff;-->
+<!--            border: 1px solid #ddd;-->
+<!--            border-radius: 10px;-->
+<!--            box-shadow: 0 2px 4px rgba(0,0,0,0.1);-->
+<!--            display: flex;-->
+<!--            flex-direction: column;-->
+<!--        }-->
+<!--        .tabs {-->
+<!--            display: flex;-->
+<!--            border: 1px solid #ffb200;-->
+<!--            border-radius: 30px;-->
+<!--            overflow: hidden;-->
+<!--            margin: 20px 0;-->
+<!--            width: max-content;-->
+<!--            align-self: center;-->
+<!--        }-->
+<!---->
+<!--        .user-tab-button {-->
+<!--            flex: 1;-->
+<!--            padding: 10px 20px;-->
+<!--            text-align: center;-->
+<!--            cursor: pointer;-->
+<!--            border: none;-->
+<!--            background-color: #fff;-->
+<!--            color: #ffb200;-->
+<!--            font-weight: bold;-->
+<!--            font-size: large;-->
+<!--            transition: background-color 0.3s, color 0.3s;-->
+<!--            border-radius: 30px;-->
+<!--        }-->
+<!---->
+<!--        .user-tab-button.active, .user-tab-button:hover {-->
+<!--            background-color: #ffb200;-->
+<!--            color: #fff;-->
+<!--        }-->
+<!---->
+<!--        .tab-content {-->
+<!--            display: none;-->
+<!--            padding: 20px;-->
+<!--        }-->
+<!---->
+<!--        .tab-content.active {-->
+<!--            display: block;-->
+<!--        }-->
+<!---->
+<!--        .user-table {-->
+<!--            width: 100%;-->
+<!--            border-collapse: collapse;-->
+<!--            margin-top: 20px;-->
+<!--        }-->
+<!---->
+<!--        .user-table th, .user-table td {-->
+<!--            padding: 10px;-->
+<!--            border: 1px solid #ddd;-->
+<!--            text-align: left;-->
+<!--        }-->
+<!---->
+<!--        .user-table th {-->
+<!--            background-color: #f5f5f5;-->
+<!--            font-weight: bold;-->
+<!--        }-->
+<!---->
+<!--        .user-table a {-->
+<!--            color: #007bff;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!---->
+<!--        .user-table a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+<!---->
+<!--    </style>-->
 </head>
 <body>
 
@@ -163,7 +163,7 @@
             <li><a href="#" onclick="showTab('tableau-utilisateur')">TABLEAU DES UTILISATEURS</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="profile-main">
         <div id="annonce" class="tab-content">
             <div class="annonce-card">
                 <img src="http://localhost/ElitCar2.0/public/img/VW_1966.jpg" alt="Renault Clio" class="card-image">

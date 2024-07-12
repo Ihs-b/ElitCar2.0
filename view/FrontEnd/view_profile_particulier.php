@@ -41,7 +41,7 @@ ob_start();
         <li><a href="#" onclick="showTab('notifications')">MES NOTIFICATIONS</a></li>
     </ul>
 </nav>
-<main>
+<main class="profile-main">
     <div id="locations" class="tab-content">
         <div class="no-rentals">
             <img src="http://localhost/ElitCar2.0/public/img/logo_voiture_empty.png" alt="Car Icon">
