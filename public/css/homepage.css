@@ -211,7 +211,7 @@
       outline: none;
   }
   
-  button {
+  .btn-resv{
       width: 100%;
       padding: 0.75rem;
       font-size: 1rem;
@@ -222,7 +222,7 @@
       cursor: pointer;
   }
   
-  button:hover {
+  .btn-resv:hover {
       background-color: #e68a00;
   }
   
@@ -849,4 +849,123 @@ h1 {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+/* ________________________________________page4/5/6/7____________________________ */
+.container-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ajout pour aligner verticalement */
+  padding: 20px;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 1;
+  display: flex; /* Utilisation de flexbox pour aligner l'image et la case côte à côte */
+  justify-content: flex-end; /* Aligner l'image à droite */
+  align-items: center; /* Centrer verticalement l'image */
+}
+
+.right-side img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 10px; /* Espacement entre l'image et la case */
+}
+
+.switch {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.switch span {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.switch span.active {
+  border-bottom: 2px solid #e68a00;
+}
+
+.form-container-box {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+form {
+  display: none; /* Masquer tous les formulaires par défaut */
+}
+
+form:first-child {
+  display: block; /* Afficher le premier formulaire par défaut */
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], button, label {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  display: list-item;
+}
+
+.btn-conx {
+  background-color: #f8fafb;
+  color: #0a0a0a;
+  border: 1px solid;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+#btn-fb {
+  background-color: #4781fe;
+  color: #ffffff;
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#btn-ap {
+  background-color: #151619;
+  color: #ffffff;
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.small-imagegoogle {
+  width: 23px;
+  height: 23px;
+  margin-right: 5px;
+}
+
+.small-imagefb {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.small-imageapple {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.ou {
+  text-align: center;
 }

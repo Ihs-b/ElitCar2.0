@@ -24,7 +24,7 @@
                             <input type="date" placeholder="Fin">
                         </div>
                     </div>
-                    <button type="submit">Recherche</button>
+                    <button type="submit" class=" btn-resv">Recherche</button>
                 </form>
             </div>
         </div>
@@ -269,7 +269,7 @@
                 de voitures ?</h1>
                 <p>Avec Afriicar, votre chiffre d'affaire augmente <br>
                 de manière significative.</p>
-                <a href=""><button>Voir les solutions</button></a>
+                <a href=""><button class="btn-resv">Voir les solutions</button></a>
             </div>
             <div class="image-container">
             <img src="public/img/10.jpg" alt="Image">
