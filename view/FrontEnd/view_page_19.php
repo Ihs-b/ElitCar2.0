@@ -10,14 +10,7 @@ ob_start();
     <title>Mon Compte - Elitcar</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">Elit<span>car</span></div>
-        <div class="nav-links">
-            <a href="#">Agence Elitcar</a>
-            <a href="#">Des questions ?</a>
-            <a href="view_page_18.php"  class="active">Ajouter une annonce</a>
-        </div>
-    </div>
+ 
     <div class="navbar2">
         <a href="#">MES ANNONCES</a>
         <a href="#" class="active">MON COMPTE</a>
@@ -145,10 +138,9 @@ require('view_Template.php');
             padding: 30px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: absolute;
-            top: 130px; /* Positioning below both navbars */
             left: 0;
             height: calc(130vh - 100px);
-            gap: 150px;
+
         }
         .sidebar a {
             display: block;
@@ -210,4 +202,34 @@ require('view_Template.php');
             margin-top: 20px;
             display: inline-block;
         }
+     /* Media Queries for smaller screens */
+     @media (max-width: 768px) {
+            .navbar2 {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 10px;
+            }
+            .navbar2 a {
+                padding: 5px 0;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position:absolute;
+                padding: 10px;
+            }
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                margin-top: 10rem;
+           
+            }
+            .sidebar a {
+                display: inline-block;
+                padding: 10px 15px;
+            }
+
+        }
+    
     </style>
