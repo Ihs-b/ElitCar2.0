@@ -11,21 +11,17 @@ ob_start();
   
 </head>
 <body>
-    <div class="navbar">
-    <a href="#" class="navbar-link"> <div class="logo">Elit<span>car</span></div></a>
-    </div>
-    <div class="main">
         <div class="container">
         <div class="left-section">
             <div class="form-container">
                 <h1>Mot de passe oublié</h1>
                 <p>Si votre adresse e-mail est présente dans notre base de données, vous recevrez dans quelques minutes un courriel vous fournissant les instructions pour réinitialiser votre mot de passe.</p>
                 <p>Si vous ne localisez pas ce courriel, veuillez vérifier votre dossier indésirables ou vos spams.</p>
-                <a href="#"><strong> Renvoyer l'email</strong></a>
+                <a href="view_Forgot_Password_Agency.php"><strong> Renvoyer l'email</strong></a>
             </div>
         </div>
             <div class="right-section">
-            <img src="public/img/homepage/2.jpg">
+         
                 <!-- Image content is handled by the background-image property in CSS -->
             </div>
             </div>
@@ -74,15 +70,17 @@ require('view_Template.php');
             margin-top: 60px; /* Ajoute une marge supérieure pour éviter de recouvrir la navbar */
         }
         .left-section {
-            width: 50%;
+            max-width: 30%;
             padding: 40px;
             background-color: white;
+            margin-left: 80px;
         }
         .right-section {
             width: 50%;
-            background-image: url('public/img/homepage/2.jpg'); /* Remplacez par le chemin de votre image */
+            background-image: url('intro.png'); /* Remplacez par le chemin de votre image */
             background-size: cover;
             background-position: center;
+            margin-left: 120px;
         }
         .form-container {
             margin-top: 100px;
@@ -106,6 +104,39 @@ require('view_Template.php');
             text-decoration: underline;
         }
 
-       
-    </style>
+               /* Styles pour les petits écrans */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction:column-reverse;
+                margin-top: 20px; /* Réduire la marge pour les petits écrans */
+                text-align: center;
+                display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+            }
+            .left-section{
+                max-width: 60%;
+                padding: 20px;
+            }
+            .right-section {
+                max-width: 200%;
+            border-radius: 10px;
+            margin: 20px 30px;
+            flex: 1;
+            }
+            .form-container {
+                margin-top: 20px;
+            }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
 
+            }
+    
+    </style>
