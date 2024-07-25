@@ -1,5 +1,5 @@
-<?
-$title="Agence";
+<?php
+$title = "Agence";
 ob_start();
 ?>
 <!DOCTYPE html>
@@ -8,12 +8,8 @@ ob_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elitcar - Mot de passe oublié</title>
-
 </head>
 <body>
-    <div class="navbar">
-    <a href="#" class="navbar-link"> <div class="logo">Elit<span>car</span></div></a>
-    </div>
     <div class="container">
         <div class="left-section">
             <div class="form-container">
@@ -27,55 +23,31 @@ ob_start();
         </div>
         <div class="right-section">
             <!-- Section pour l'image -->
-             <img src="login-pro.jpg">
         </div>
     </div>
 </body>
 </html>
 <?php
-$content =ob_get_clean();
+$content = ob_get_clean();
 require('view_Template.php');
 ?>
-<style>
+    <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
             height: 100vh;
-            background-color: white ;
-        }
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
             background-color: white;
-            border-bottom: 1px solid #ddd;
-            width: 100%;
-            position: fixed;
-            top: 0;
-        }
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .navbar .logo span {
-            color: #FF9800;
-        }
-        .navbar-link{
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
         }
         .container {
             display: flex;
+            flex-direction: row;
             width: 100%;
             margin-top: 60px; /* Ajoute une marge supérieure pour éviter de recouvrir la navbar */
         }
-        .left-section {
+        .left-section{
             width: 50%;
             padding: 40px;
-            background-color: white;
         }
         .right-section {
             width: 50%;
@@ -113,6 +85,53 @@ require('view_Template.php');
         }
         button:hover {
             background-color: #e68900;
+        }
+
+        /* Styles pour les petits écrans */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction:column-reverse;
+                margin-top: 20px; /* Réduire la marge pour les petits écrans */
+                text-align: center;
+                display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+            }
+            .left-section{
+                width: 70%;
+                padding: 20px;
+            }
+            .right-section {
+                max-width: 200%;
+            border-radius: 10px;
+            margin: 20px 30px;
+            flex: 1;
+            }
+            .form-container {
+                margin-top: 20px;
+            }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            input[type="email"] {
+                width: 70%;
+                padding: 10px;
+            }
+            button{
+                padding: 10px 25px;
+            font-size: 1rem;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            }
         }
     </style>
 
