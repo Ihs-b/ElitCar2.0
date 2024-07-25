@@ -1,4 +1,4 @@
-<?
+<?php
 $title="Agence";
 ob_start();
 ?>
@@ -8,52 +8,13 @@ ob_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Compte - Elitcar</title>
-   
-</head>
-<body>
-    <div class="navbar">
-        <div class="logo">Elit<span>car</span></div>
-        <div class="nav-links">
-            <a href="#">Agences</a>
-            <a href="#">Des questions ?</a>
-            <a href="view_page_18.php" class="active">Ajouter une annonce</a>
-        </div>
-    </div>
-    <div class="navbar2">
-        <a href="#" class="nav-item">MES ANNONCES</a>
-        <a href="view_page_18.php" class="nav-item active">MON COMPTE</a>
-        <a href="#" class="nav-item">AJOUTER UNE ANNONCE</a>
-        <a href="#" class="nav-item">MES MESSAGES</a>
-        <a href="#" class="nav-item">MES NOTIFICATIONS</a>
-    </div>
-    <div class="sidebar">
-        <a href="#">Modifier mon compte</a>
-        <a href="#">Paramètres du compte</a>
-        <a href="view_page_18.php" class="active">Moyens de paiement</a>
-        <a href="#">Adresse postale</a>
-    </div>
-    <div class="content">
-        <div class="payment-info">
-            <img src="credit-card1.png" alt="Payment Icon"> 
-            <p><strong> n'avez enregistré aucun moyen de paiement.</strong></p>
-            <p>L'ajout d'un nouveau moyen de paiement est uniquement disponible au moment de la réservation.</p>
-            <button>Trouver un véhicule</button>
-        </div>
-    </div>
-</body>
-</html>
-<?php
-$content =ob_get_clean();
-require('view_Template.php');
-?>
-<style></style>
-<style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f7f7f7;
         }
-        .navbar, .navbar2 {
+        .navbar2 {
             width: 100%;
             padding: 10px 20px;
             background-color: white;
@@ -66,26 +27,10 @@ require('view_Template.php');
             left: 0;
             z-index: 1000;
         }
-        .navbar {
-            top: 0;
-        }
+
         .navbar2 {
-            top: 1px; /* Positioning below the first navbar */
             justify-content: center;
             gap: 150px;
-            position: relative;
-        }
-        .navbar .logo {
-            font-size: 45px;
-            font-weight: bold;
-            color: #333;
-        }
-        .navbar .logo span {
-            color: #ff9900;
-        }
-        .navbar .nav-links {
-            display: flex;
-            gap: 20px;
         }
         .nav-links a {
             text-decoration: none;
@@ -94,18 +39,16 @@ require('view_Template.php');
             position: relative;
             padding: 10px 30px;
         }
-        
-        .navbar ,
+        .navbar .nav-links a:hover,
+        .navbar2 a:hover {
+            color: #ff9900;
+        }
         .navbar2 a {
             text-decoration: none;
             color: black;
             font-weight: bold;
             position: relative;
             padding: 10px 0;
-        }
-        .navbar .nav-links a:hover,
-        .navbar2 a:hover {
-            color: #ff9900;
         }
         .navbar2 a::after {
             content: '';
@@ -124,15 +67,14 @@ require('view_Template.php');
             transform: scaleX(1);
         }
         .sidebar {
-            width: 200px;
+            width: 300px;
             background-color: #fff;
             padding: 30px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 130px; /* Positioning below both navbars */
+            position: absolute;
             left: 0;
-            height: calc(100vh - 100px);
-            gap: 150px;
+            top: 70px; /* Adjusted to sit below the navbar */
+            height: calc(100vh - 70px);
         }
         .sidebar a {
             display: block;
@@ -142,19 +84,18 @@ require('view_Template.php');
             font-weight: bold;
             margin-bottom: 7px;
         }
-        .navbar a.active,
         .sidebar a:hover,
         .sidebar a.active {
             color: #ff9900;
         }
         .content {
-            margin-left: 220px;
+            margin-left: 320px; /* Adjusted for the sidebar width */
             padding: 20px;
-            padding-top: 140px; /* Adjust for the navbar height */
+            padding-top: 100px; /* Adjust for the navbar height */
         }
         .content .payment-info {
             background-color: white;
-            padding: 70px;
+            padding: 40px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             max-width: 600px;
@@ -180,7 +121,69 @@ require('view_Template.php');
         .content .payment-info button:hover {
             background-color: #e68a00;
         }
+        /* Media Queries for smaller screens */
+        @media (max-width: 768px) {
+            .navbar2 {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 10px;
+            }
+            .navbar2 a {
+                padding: 5px 0;
+            }
+            .sidebar {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                top: 14rem; /* Adjusted to sit below the navbar */
+                position: fixed;
+            }
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                margin-top: 25rem; /* Adjust for the navbar height */
+                position: fixed;
+            }
+            .sidebar a {
+                display: inline-block;
+                padding: 10px 15px;
+            }
+            .content .payment-info {
+                padding: 20px;
+            }
+        }
     </style>
+</head>
+<body>
+    <div class="navbar2">
+        <a href="#" class="nav-item">MES ANNONCES</a>
+        <a href="view_page_18.php" class="nav-item active">MON COMPTE</a>
+        <a href="#" class="nav-item">AJOUTER UNE ANNONCE</a>
+        <a href="#" class="nav-item">MES MESSAGES</a>
+        <a href="#" class="nav-item">MES NOTIFICATIONS</a>
+    </div>
+    <div class="sidebar">
+        <a href="#">Modifier mon compte</a>
+        <a href="view_page_19.php">Paramètres du compte</a>
+        <a href="view_page_18.php" class="active">Moyens de paiement</a>
+        <a href="#">Adresse postale</a>
+    </div>
+    <div class="content">
+        <div class="payment-info">
+            <img src="credit-card1.png" alt="Payment Icon">
+            <p><strong>Vous n'avez enregistré aucun moyen de paiement.</strong></p>
+            <p>L'ajout d'un nouveau moyen de paiement est uniquement disponible au moment de la réservation.</p>
+            <button>Trouver un véhicule</button>
+        </div>
+    </div>
+</body>
+</html>
+<?php
+$content = ob_get_clean();
+require('view_Template.php');
+?>
+
 
 
 
