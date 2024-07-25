@@ -46,14 +46,16 @@ require('view_Template.php');
             margin-top: 60px; /* Ajoute une marge supérieure pour éviter de recouvrir la navbar */
         }
         .left-section{
-            width: 50%;
+            max-width: 30%;
             padding: 40px;
+            margin-left: 80px;
         }
         .right-section {
             width: 50%;
             background-image: url('login-pro.jpg'); /* Remplacez par le chemin de votre image */
             background-size: cover;
             background-position: center;
+            margin-left: 120px;
         }
         .form-container {
             margin-top: 100px;
@@ -99,7 +101,7 @@ require('view_Template.php');
                height: 100vh;
             }
             .left-section{
-                width: 70%;
+                max-width: 70%;
                 padding: 20px;
             }
             .right-section {
@@ -134,4 +136,5 @@ require('view_Template.php');
             }
         }
     </style>
+
 
