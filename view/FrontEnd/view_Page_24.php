@@ -11,9 +11,6 @@ ob_start();
 
 </head>
 <body>
-    <div class="navbar">
-    <a href="#" class="navbar-link"> <div class="logo">Elit<span>car</span></div></a>
-    </div>
     <div class="container">
         <div class="left-section">
             <div class="form-container">
@@ -27,7 +24,7 @@ ob_start();
         </div>
         <div class="right-section">
             <!-- Section pour l'image -->
-             <img src="public/img/homepage/2.jpg">
+
         </div>
     </div>
 </body>
@@ -43,30 +40,7 @@ require('view_Template.php');
             display: flex;
             height: 100vh;
             background-color: white ;
-        }
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background-color: white;
-            border-bottom: 1px solid #ddd;
-            width: 100%;
-            position: fixed;
-            top: 0;
-        }
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .navbar .logo span {
-            color: #FF9800;
-        }
-        .navbar-link{
-            text-decoration: none;
-            color: black;
-            font-size: 16px;
-        }
+        } 
         .container {
             display: flex;
             width: 100%;
@@ -78,8 +52,8 @@ require('view_Template.php');
             background-color: white;
         }
         .right-section {
-            width: 50%;
-            background-image: url('public/img/homepage/2.jpg'); /* Remplacez par le chemin de votre image */
+            width: 40%;
+            background-image: url('pro-img.jpg'); /* Remplacez par le chemin de votre image */
             background-size: cover;
             background-position: center;
         }
@@ -113,6 +87,53 @@ require('view_Template.php');
         }
         button:hover {
             background-color: #e68900;
+        }
+        
+        /* Styles pour les petits écrans */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction:column-reverse;
+                margin-top: 20px; /* Réduire la marge pour les petits écrans */
+                text-align: center;
+                display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+            }
+            .left-section{
+                width: 70%;
+                padding: 20px;
+            }
+            .right-section {
+                width: 50%;
+            border-radius: 10px;
+            margin: 20px 30px;
+            flex: 1;
+            }
+            .form-container {
+                margin-top: 20px;
+            }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            input[type="email"] {
+                width: 70%;
+                padding: 10px;
+            }
+            button{
+                padding: 10px 25px;
+            font-size: 1rem;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            }
         }
     </style>
 
