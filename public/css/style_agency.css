@@ -1,9 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: silver;
-    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.925rem;
     /* Taille de base pour le corps du document */
 }
 
+a {
+    text-decoration: none;
+}
 
 .container-professional {
     height: 75vh;
