@@ -16,9 +16,9 @@ ob_start();
                         <ul class="dropdown" id="my-dropdown-id">
                             <li><a href="index.php?action=logAdmin">Admin</a></li>
                             <li class="separator"></li>
-                            <li><a href="index.php?action=logAgency">Professionnel</a></li>
+                            <li><a href="http://localhost/ElitCar2.0/view/FrontEnd/ktr/view_desktop_7.php">Professionnel</a></li>
                             <li class="separator"></li>
-                            <li><a href="index.php?action=logCust">particulier</a></li>
+                            <li><a href="http://localhost/ElitCar2.0/view/FrontEnd/ktr/view_page_6.php">particulier</a></li>
                         </ul>
                         </li>
                         <li><a href="index.php?action=agency">Agences</a></li>

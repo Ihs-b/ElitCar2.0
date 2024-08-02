@@ -14,7 +14,9 @@ ob_start();
 <header>
     <?= $nav ?>
 </header>
+
 <main>
+
 <div class="wrapper">
         <div class="reservation">
             <div class="form-container">
@@ -23,7 +25,7 @@ ob_start();
                 <form>
                     <div class="input-group">
                         <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <input type="text" placeholder="Douala, Cameroun" id="loc">
+                        <input type="text" placeholder="Douala, Cameroun">
                     </div>
                     <div class="date-group">
                         <div class="input-group">
@@ -35,19 +37,20 @@ ob_start();
                             <input type="date" placeholder="Fin">
                         </div>
                     </div>
-                    <button type="submit">Recherche</button>
+                    <button type="submit" class=" btn-resv">Recherche</button>
                 </form>
             </div>
         </div>
         <div class="image-container">
-            <img src="././public/img/homepage/1.jpg" alt="Image">
+            <img src="public/img/homepage/1.jpg" alt="Image">
         </div>
     </div>
+
     <section class="wrap">
       <div class="content">
         <div class="left-column">
             <div class="image-container">
-                <img src="././public/img/homepage/2.jpg" alt="Image" class="small-image">
+                <img src="public/img/homepage/2.jpg" alt="Image" class="small-image">
             </div>
         </div>
         <div class="right-column">
@@ -55,6 +58,7 @@ ob_start();
             <h2>Découvrez-la toute nouvelle <br>approche pour la location de voitures.</h2>
             <br>
             <p>Sélectionnez parmi une variété de véhicules proposés par des <br>professionnels à proximité de votre emplacement.</p>
+
             </div>
             <div class="cards">
                 <div class="card">
@@ -71,27 +75,33 @@ ob_start();
           </div>
        </div>
     </section>
+
     <div class="containe">
     <h1>Trouvez des véhicules qui répondent <br> à vos exigences</h1>
     <div class="cont">
         <div class="cardd">
-            <img src="././public/img/homepage/3.jpg" alt="Image 1">
+            <img src="public/img/homepage/3.jpg" alt="Image 1">
             <div class="card-text">Citadine</div>
+            
         </div>
         <div class="cardd">
-            <img src="././public/img/homepage/4.jpg" alt="Image 2">
+            <img src="public/img/homepage/4.jpg" alt="Image 2">
             <div class="card-text">Monospace</div>
+           
         </div>
         <div class="cardd">
-            <img src="././public/img/homepage/5.jpg" alt="Image 3">
+            <img src="public/img/homepage/5.jpg" alt="Image 3">
             <div class="card-text">Utilitaire</div>
+           
         </div>
         <div class="cardd">
-            <img src="././public/img/homepage/6.jpg" alt="Image 4">
+            <img src="public/img/homepage/6.jpg" alt="Image 4">
             <div class="card-text">SUV</div>
+            
         </div>
     </div>
 </div>
+
 <h1 class="caramel">Disponible dans 6 villes au Cameroun</h1>
 <!-- Contenedor -->
 <ul id="accordion" class="accordion">
@@ -104,7 +114,7 @@ ob_start();
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link"> Location de voitures à Yaoundé<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Javascript</a></li>
                 <li><a href="#">jQuery</a></li>
@@ -112,7 +122,7 @@ ob_start();
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link"> Location de voitures à Garoua<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Tablet</a></li>
                 <li><a href="#">Mobile</a></li>
@@ -120,7 +130,7 @@ ob_start();
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link">Location de voitures à Bafoussam<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Google</a></li>
                 <li><a href="#">Bing</a></li>
@@ -128,7 +138,7 @@ ob_start();
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link">Location de voitures à Sangmelima<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Google</a></li>
                 <li><a href="#">Bing</a></li>
@@ -136,7 +146,7 @@ ob_start();
                 </ul>
             </li>
             <li>
-                <div class="link">Location de voitures à Douala<i class="fa fa-chevron-down"></i></div>
+                <div class="link">Location de voitures à Kribi<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
                 <li><a href="#">Google</a></li>
                 <li><a href="#">Bing</a></li>
@@ -150,21 +160,28 @@ ob_start();
             de votre road trip grâce à nos recommandations.</p>
             <div class="cont">
                 <div class="cardd">
-                    <img src="././public/img/homepage/7.jpg" alt="Image 1">
-                    <div class="card-text"><span>Où se loger à Yaoundé ?</span> <br>Pour les vacances, le travail, et de nombreuses
+                    <img src="public/img/homepage/7.jpg" alt="Image 1">
+                    <div class="card-text" id="card-te"><h3><span>Où se loger à Yaoundé ?</span></h3> <br>Pour les vacances, le travail, et de nombreuses
                     autres circonstances.</div>
+                    
                 </div>
                 <div class="cardd">
-                    <img src="././public/img/homepage/8.jpg" alt="Image 2">
-                    <div class="card-text"><span>Conseils pour un road trip réussi</span> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
+                    <img src="public/img/homepage/8.jpg" alt="Image 2">
+                    <div class="card-text" id="card-te"><h3><span>Conseils pour un road trip réussi</span></h3> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
+                
                 </div>
                 <div class="cardd">
-                    <img src="././public/img/homepage/9.jpg" alt="Image 3">
-                    <div class="card-text"><span>Conseils pour un road trip réussi</span> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
+                    <img src="public/img/homepage/9.jpg" alt="Image 3">
+                    <div class="card-text" id="card-te"><h3><span>Conseils pour un road trip réussi</span></h3> <br>Pour la Saint-Valentin et bien d'autres occasions.</div>
+                
                 </div>
+                
             </div>
         </div>
-        <h1 class="caramel">Disponible dans 6 villes au Cameroun</h1>
+
+
+
+        <h1 class="caramel">Vous êtes une agence de location de <br> voitures ?</h1>
 <!-- Contenedor -->
 <ul id="accordion" class="accordion">
             <li>
@@ -256,6 +273,8 @@ ob_start();
                 </ul>
             </li>
 </ul>
+
+
     <div class="wra">
         <div class="pub">
             <div class="tex">
@@ -263,12 +282,14 @@ ob_start();
                 de voitures ?</h1>
                 <p>Avec Afriicar, votre chiffre d'affaire augmente <br>
                 de manière significative.</p>
-                <a href=""><button>Voir les solutions</button></a>
+                <a href=""><button class="btn-resv">Voir les solutions</button></a>
             </div>
             <div class="image-container">
-            <img src="././public/img/homepage/10.jpg" alt="Image">
+            <img src="public/img/homepage/10.jpg" alt="Image">
         </div>
         </div>
+
+        
     </div>
 </main>
 <footer><?=$footer?></footer>

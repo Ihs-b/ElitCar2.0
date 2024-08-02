@@ -2,7 +2,7 @@
 ob_start();
 ?>
     <div class="faq-container">
-        <h1>Foire aux questions</h1>
+        <h1 class="faq-title">Foire aux questions</h1>
         <div class="faq-columns">
             <div class="faq-column">
                 <details class="faq-item">

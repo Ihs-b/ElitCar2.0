@@ -1,4 +1,3 @@
-// __________________________navbar____________
 let dropdowns = document.querySelectorAll(".navbar .dropdown-toggler");
 let dropdownIsOpen = false;
 // Handle dropdown menues
