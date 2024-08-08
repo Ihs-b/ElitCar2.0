@@ -104,4 +104,31 @@ aside ul li {
   border-radius: 4px;
 }
 
+.bloc p {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 1499px) {
+  .bloc {
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .account-section {
+    height: 200px;
+    width: 140%;
+  }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+}
+
 
