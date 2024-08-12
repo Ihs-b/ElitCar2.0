@@ -10,61 +10,63 @@ $link = '
 $script = '<script src="./public/js/script_navbar.js"></script>';
 ob_start();
 ?>
+
 <body>
-<header>
-    <?= $nav ?? ''; ?>
-</header>
-<main>
-<div class="agencycontainer">
-    <div class="agencytext-section">
-        <h1>S'inscrire en tant qu' agence de location de voiture</h1>
-        <p>Choisir le forfait qui correspond à la taille de votre agence est une étape cruciale pour garantir une connectivité efficace et une communication sans heurts.</p>
-        <a target="_self" class="col-8 col-xl-10" href="http://localhost/ElitCar2.0/view/FrontEnd/ktr/view_desktop_7.php"">
-            <button>S'inscrire</button>
-        </a>
-    </div>
-    <div class="agencyimage-section">
-        <img src="././public/img/Agency/1.jpg" alt="Car Steering Wheel">
-    </div>
-        <div class="agencycircle"></div>
-    </div>
-    <div class="agencycontainer2">
-        <div class="agencytitle">
-            <h2>Faites augmenter votre chiffre d'affaire d'une manière significative</h2>
+    <header>
+        <?= $nav ?? ''; ?>
+    </header>
+    <main>
+        <div class="agencycontainer">
+            <div class="agencytext-section">
+                <h1>S'inscrire en tant qu' agence de location de voiture</h1>
+                <p>Choisir le forfait qui correspond à la taille de votre agence est une étape cruciale pour garantir une connectivité efficace et une communication sans heurts.</p>
+                <a target="_self" class="col-8 col-xl-10" href="index.php?action=authAgency">
+                    <button>S'inscrire</button>
+                </a>
+            </div>
+            <div class="agencyimage-section">
+                <img src="././public/img/Agency/1.jpg" alt="Car Steering Wheel">
+            </div>
+            <div class="agencycircle"></div>
         </div>
-        <div class="agencycards">
-            <div class="agencycard">
-                <h3>Vous avez moins de 10 voitures</h3>
-                <p>12000 CFA par an</p>
-                <a class="col-8 col-xl-10" href="#">
-                    <button>S'inscrire</button>
-                </a>
+        <div class="agencycontainer2">
+            <div class="agencytitle">
+                <h2>Faites augmenter votre chiffre d'affaire d'une manière significative</h2>
             </div>
-            <div class="agencycard">
-                <h3>Vous avez moins de 50 voitures</h3>
-                <p>12000 CFA par an</p>
-                <a class="col-8 col-xl-10" href="#">
-                    <button>S'inscrire</button>
-                </a>
-            </div>
-            <div class="agencycard">
-                     <h3>Vous avez plus de 50 voitures</h3>
-                     <p>12000 CFA par an</p>
-                     <a class="col-8 col-xl-10" href="#">
+            <div class="agencycards">
+                <div class="agencycard">
+                    <h3>Vous avez moins de 10 voitures</h3>
+                    <p>12000 CFA par an</p>
+                    <a class="col-8 col-xl-10" href="#">
+                        <button>S'inscrire</button>
+                    </a>
+                </div>
+                <div class="agencycard">
+                    <h3>Vous avez moins de 50 voitures</h3>
+                    <p>12000 CFA par an</p>
+                    <a class="col-8 col-xl-10" href="#">
+                        <button>S'inscrire</button>
+                    </a>
+                </div>
+                <div class="agencycard">
+                    <h3>Vous avez plus de 50 voitures</h3>
+                    <p>12000 CFA par an</p>
+                    <a class="col-8 col-xl-10" href="#">
                         <button>S'inscrire</button>
                     </a>
                 </div>
             </div>
         </div>
         <div>
-         <?= $faq ?? ''; ?>
+            <?= $faq ?? ''; ?>
         </div>
-</main>
-<footer>
-    <?= $footer ?? ''; ?>
-</footer>
-<?= $script; ?>
+    </main>
+    <footer>
+        <?= $footer ?? ''; ?>
+    </footer>
+    <?= $script; ?>
 </body>
+
 </html>
 
 <?php

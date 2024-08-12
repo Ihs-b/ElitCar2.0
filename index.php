@@ -2,17 +2,13 @@
 require('controller/FrontEnd/controllerFrontend.php');
 
 if (isset($_GET['action'])) {
-    if($_GET['action'] === 'logCust'){// "log page cust"
-        elitLogCust();
-    }elseif ($_GET['action'] === 'authCust') {//"auth cust page"
-        elitAuthCust();
-    }elseif ($_GET['action'] === 'logAgency') {//"log agency pages"
-        elitLogAgency();
-    }elseif ($_GET['action'] === 'agency') {//"auth Agency"
+    if ($_GET['action'] === 'logCust') { //"auth cust page"
+        elitlogCust();
+    } elseif ($_GET['action'] === 'agency') { //"auth Agency"
         elitAgency();
-    }elseif ($_GET['action'] === 'authAgency') {//"auth Agency"
-        elitAuthAgency();
+    } elseif ($_GET['action'] === 'logAgency') { //"auth Agency"
+        elitlogAgency();
     }
-}else {
+} else {
     elitLandHome();
 }

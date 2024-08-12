@@ -1,13 +1,11 @@
 
 <main>
-
 <div class="container-box">
         <div class="left-side">
             <div class="switch">
                 <span class="active">Se connecter</span>
                 <span>S'inscrire</span>
             </div>
-
             <div class="form-container-box">
                 <form id="login-form">
                     <h2>Nous sommes contents <br>
@@ -45,16 +43,13 @@
             <img src="2.jpg" alt="Image de côté droit">
         </div>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const switchButtons = document.querySelectorAll('.switch span');
             const forms = document.querySelectorAll('.form-container-box form');
-
             // Initial state
             switchButtons[0].classList.add('active');
             forms[0].style.display = 'block';
-
             // Switch function
             switchButtons.forEach((button, index) => {
                 button.addEventListener('click', () => {
@@ -69,14 +64,12 @@
             });
         });
     </script>
-
 <style>
     * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
-  
   body {
     font-family: "Roboto", sans-serif;
     font-size: 0.925rem;
