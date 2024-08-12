@@ -11,7 +11,7 @@ if (isset($_GET['action'])) {
     }elseif ($_GET['action'] === 'agency') {//"auth Agency"
         elitAgency();
     }elseif ($_GET['action'] === 'authAgency') {//"auth Agency"
-        elitAgency();
+        elitAuthAgency();
     }
 }else {
     elitLandHome();

@@ -5,6 +5,7 @@ $link ='
     <link rel="stylesheet" href="././public/css/style_navbar.css">
     <link rel="stylesheet" href="././public/css/style_FAQ.css">
     <link rel="stylesheet" href="././public/css/style_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     ';
     $script ='<script src="././public/js/script_navbar.js">
     </script>';
@@ -29,7 +30,7 @@ ob_start();
             </div>
         </div>
         <div class="container-pro-img ">
-            <div class="container-pro-img-1 "><img src="pro-img.jpg"></div>
+            <div class="container-pro-img-1 "><img src="././public/img/agency/pro-img.jpg"></div>
         </div>
     </div>
 
@@ -95,7 +96,7 @@ ob_start();
                     </div>
 
                     <div class="container-main-choose-sub-card-btn ">
-                        <a target="_self" class="col-8 col-xl-10" href="index.php?action=authAgency">
+                        <a././public/img/agency/ class="col-8 col-xl-10" href="index.php?action=authAgency">
                             <button class="btn btn-warning-pro-2 ">S'inscrire</button>
                         </a>
                     </div>
