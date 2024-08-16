@@ -184,3 +184,11 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+
+// responsive
+
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+  let navbarMenu = document.querySelector('.navbar-menu');
+  navbarMenu.classList.toggle('active');
+});

@@ -151,14 +151,15 @@
     font-weight: 500;
     font-size: 1.25rem;
   }
-  .wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-  }
+
   /* _________________________________________________partie reservation_____________________________________ */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
   .reservation {
       display: flex;
       justify-content: center;
@@ -968,4 +969,265 @@ label {
 
 .ou {
   text-align: center;
+}
+
+
+
+/* _________________________________________________________responsive__________________________ */
+/* ______________________home page___________________ */
+@media (max-width: 447px) {
+  .container {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+  .navbar {
+      padding: 0.5rem 0.75rem;
+  }
+
+  .navbar .navbar-menu {
+      display: none;
+  }
+
+  .navbar .navbar-header .navbar-toggler {
+      display: block;
+  }
+
+  .navbar .navbar-header h4 {
+      font-size: 1rem;
+  }
+
+  .navbar .navbar-menu .navbar-nav {
+      flex-direction: column;
+      margin-left: 0;
+  }
+
+  .navbar .navbar-menu .navbar-nav > li > a {
+      padding: 0.75rem 1rem;
+  }
+
+  .reservation {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-container {
+    padding: 2rem;
+    width: 100%;
+}
+
+.image-container {
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+.content {
+    flex-direction: column;
+}
+
+.left-column,
+.right-column {
+    flex: 1 0 100%;
+}
+
+.card {
+    flex: 1 0 100%;
+}
+
+.form-container h1 {
+    font-size: 1.2rem;
+}
+
+.form-container h2 {
+    font-size: 1rem;
+}
+
+.input-group {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+}
+
+.btn-resv {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+#icon {
+    font-size: 30px;
+}
+
+.containe {
+  max-width: 100%;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.5rem; /* Réduction de la taille du titre */
+  margin-bottom: 15px; /* Réduction de l'espacement sous le titre */
+}
+
+.cont {
+  flex-direction: column; /* Les cartes passent en colonne */
+  align-items: center;
+}
+
+.cardd {
+  width: 100%;
+  margin: 10px 0; /* Réduction de l'espacement entre les cartes */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Réduction de l'ombre */
+}
+
+/* .cardd img {
+  height: auto; 
+} */
+
+.card-text {
+  padding: 8px;
+  text-align: center;
+}
+
+#card-te {
+  text-align: center; /* Centrer le texte */
+}
+
+.caramel {
+  margin-left: 0;
+  margin-top: 20px;
+  text-align: center; /* Centrer l'élément */
+}
+
+#accordion {
+  flex-direction: column; /* Les éléments passent en colonne */
+  padding: 15px;
+}
+
+#accordion > li {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgb(141, 141, 141);
+}
+
+.section {
+  flex-direction: column; /* Les sections passent en colonne */
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.text {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  padding: 8px 15px;
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.pub {
+  flex-direction: column;
+  align-items: center;
+}
+
+.wra {
+  padding: 10px;
+  background-color: #006E97;
+  margin-top: 20px;
+}
+
+.tex {
+  text-align: center;
+  color: #fff;
+}
+.container-box {
+  flex-direction: column; /* Stacker les éléments verticalement */
+  padding: 10px; /* Réduction du padding */
+}
+
+.left-side, .right-side {
+  flex: 1 0 auto; /* Faire en sorte que chaque côté prenne la largeur disponible */
+  width: 100%; /* Assurer que les éléments occupent toute la largeur */
+  text-align: center; /* Centrer le texte et les éléments */
+  margin-bottom: 10px; /* Espacement entre les sections */
+}
+
+.right-side {
+  justify-content: center; /* Centrer l'image et la case */
+  margin-bottom: 0; /* Enlever le margin-bottom si nécessaire */
+}
+
+.right-side img {
+  margin-left: 0; /* Supprimer l'espacement latéral pour les petits écrans */
+  margin-top: 10px; /* Ajouter de l'espacement au-dessus si nécessaire */
+  width: 70%; /* Réduire la taille de l'image pour mieux s'adapter à l'écran */
+}
+
+.switch {
+  flex-direction: column; /* Stacker les éléments de la switch verticalement */
+  padding: 5px 0; /* Réduction du padding */
+}
+
+.switch span {
+  padding: 5px 10px; /* Réduction du padding des éléments */
+}
+
+.form-container-box {
+  max-width: 100%; /* Occuper toute la largeur disponible */
+  margin: 10px auto; /* Réduction du margin pour centrer */
+  padding: 10px; /* Réduction du padding */
+}
+
+h2 {
+  font-size: 1.5rem; /* Réduction de la taille de la police */
+  margin-bottom: 5px; /* Réduction de l'espacement en dessous */
+}
+
+input[type="text"], input[type="email"], input[type="password"], button, label {
+  font-size: 14px; /* Réduction de la taille de la police */
+  padding: 8px; /* Réduction du padding */
+}
+
+.btn-conx {
+  padding: 0.5rem; /* Réduction du padding du bouton */
+  font-size: 0.875rem; /* Réduction de la taille de la police */
+}
+
+#btn-fb, #btn-ap {
+  font-size: 14px; /* Réduction de la taille de la police */
+}
+
+.small-imagegoogle, .small-imagefb, .small-imageapple {
+  width: 18px; /* Réduction de la taille des icônes */
+  height: 18px; /* Réduction de la taille des icônes */
+  margin-right: 3px; /* Réduction de l'espacement */
+}
+
+.ou {
+  font-size: 14px; /* Réduction de la taille de la police pour le texte "ou" */
+  margin-top: 10px; /* Espacement au-dessus du texte "ou" */
+}
+
 }

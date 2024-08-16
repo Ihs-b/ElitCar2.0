@@ -10,32 +10,34 @@
 </head>
 <body>
     <header>
-       <nav class="navbar">
-         <div class="container">
+    <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="homepage.php"><h4>Elit<span>Car</span></h4></a>   
+        </div>
 
-                <div class="navbar-header">
-                        <button class="navbar-toggler" data-toggle="open-navbar1"></button>
-                        <a href="homepage.php"><h4>Elit<span>Car</span></h4></a>   
-                </div>
-
-                    <div class="navbar-menu" id="open-navbar1">
-                    <ul class="navbar-nav">
-                        <!-- <li class="active"><a href="#">Se connecter</a></li> -->
-                        <li class="navbar-dropdown">
-                        <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">Se connecter <i class="fa fa-angle-down"></i></a>
-                        <ul class="dropdown" id="my-dropdown-id">
-                            <li><a href="#">Admin</a></li>
-                            <li class="separator"></li>
-                            <li><a href="#">Professionnel</a></li>
-                            <li class="separator"></li>
-                            <li><a href="#">particulier</a></li>
-                        </ul>
-                        </li>
-                        <li><a href="#">Agences</a></li>
-                        <li><a href="#">F&Q?</a></li>
-                       
+        <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+                <li class="navbar-dropdown">
+                    <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">Se connecter <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown" id="my-dropdown-id">
+                        <li><a href="#">Admin</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">Professionnel</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">Particulier</a></li>
                     </ul>
-                    </div>
-                </div>
-                </nav>
+                </li>
+                <li><a href="#">Agences</a></li>
+                <li><a href="#">F&Q?</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 </header>
